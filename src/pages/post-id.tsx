@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Header } from '../components/header'
 import { Link, useParams } from 'react-router-dom'
 import usePostData, { IMessage } from '../hooks/get-post-data'

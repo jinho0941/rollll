@@ -10,7 +10,6 @@ import { FaCircleCheck } from 'react-icons/fa6'
 import { toast } from 'sonner'
 import api from '../lib/api'
 import { useNavigate } from 'react-router-dom'
-import PostIdPage from './post-id'
 
 enum Options {
   COLOR,

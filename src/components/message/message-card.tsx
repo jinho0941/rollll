@@ -11,12 +11,6 @@ type Props = {
   onClick: (id: number) => void
 }
 
-function parseHTML(htmlString: string) {
-  const parser = new DOMParser()
-  const doc = parser.parseFromString(htmlString, 'text/html')
-  return doc.body.textContent
-}
-
 export const MessageCard = ({
   id,
   img,
