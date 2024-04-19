@@ -95,7 +95,7 @@ export const MessagePage = () => {
               <div className='flex flex-row flex-wrap overflow-x-auto gap-y-3'>
                 {!!profileImages &&
                   profileImages.map((profileImage, index) => {
-                    if (index === 0) return null // 첫 번째 이미지는 제외
+                    if (index === 0) return null
                     return (
                       <img
                         key={index}

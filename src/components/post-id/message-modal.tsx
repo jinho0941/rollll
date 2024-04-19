@@ -18,6 +18,15 @@ export const MessageModal = ({
   content,
   onClose,
 }: Props) => {
+  const color =
+    relationship === '동료'
+      ? 'bg-purple-100 text-purple-600'
+      : relationship === '가족'
+      ? 'bg-green-100 text-green-600'
+      : relationship === '친구'
+      ? 'bg-sky-100 text-sky-600'
+      : 'bg-amber-100 text-amber-600'
+
   const stopPropagation = (e: any) => {
     e.stopPropagation()
   }
@@ -42,8 +51,8 @@ export const MessageModal = ({
               <span>From.</span>
               <span className='ml-2 font-bold truncate'>{sender}</span>
             </h2>
-            <div className='py-1 px-2 rounded-lg bg-slate-200 '>
-              <span className='text-slate-800'>{relationship}</span>
+            <div className={`py-1 px-2 rounded-lg ${color}`}>
+              <span>{relationship}</span>
             </div>
           </div>
           <div className='mt-5 ml-auto text-sm'>{date}</div>
