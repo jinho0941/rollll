@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import { IMessage, ITopReaction } from '../../hooks/get-post-data'
-import { Background } from '../background'
 import { EmojiBadge } from '../emoji-badge'
 
 type Props = {
